@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python
+.venv/
+
+# DBT
+logs/
+jaffle_shop/target/
+jaffle_shop/logs/
+jaffle_shop/target/
+jaffle_shop/dbt_packages/
+jaffle_shop/dbt_internal_packages/
