@@ -1,6 +1,18 @@
 sources:
   - name: stripe
     database: raw 
-    schema: stripe 
+    schema: stripe
+    description: Raw Stripe payment data.
     tables:
       - name: payment
+        description: Raw payment data from Stripe.
+        columns:
+          - name: id
+            description: Primary key for payment data.
+            data_tests:
+              - unique
+              - not_null
+          - name: amount
+            description: The amount paid in cents.
+            data_tests:
+              - not_null
